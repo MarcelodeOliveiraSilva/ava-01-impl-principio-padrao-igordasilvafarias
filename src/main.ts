@@ -12,6 +12,11 @@ const p8 = new Produto('Honorall Full HD 1080 P Webcam USB Mini Câmera')
 
 const carrinho = new Carrinho()
 
+// adicionando zero produtos - deve mostrar mensagem de erro
+carrinho.adiciona()  // teste carrinho vazio
+// adicionando quatro produtos
+carrinho.adiciona(p8, p7, p6, p5) // teste com mais de 2 produtos
+console.log(`${carrinho}`) // toString
 // adicionando dois produtos
 carrinho.adiciona(p1)
 carrinho.adiciona(p2)
